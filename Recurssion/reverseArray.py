@@ -1,0 +1,13 @@
+def reverse_array(list,st,end):
+    if st>=end:
+        return
+
+    temp=list[st]
+    list[st]=list[end]
+    list[end]=temp
+    reverse_array(list,st+1,end-1)
+
+list=[1,2,3,4,5,6,7,8]
+print(list)
+reverse_array(list,0,len(list)-1)
+print(list)
