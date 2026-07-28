@@ -11,3 +11,7 @@ list=[1,2,3,4,5,6,7,8]
 print(list)
 reverse_array(list,0,len(list)-1)
 print(list)
+
+# rlist=list[::-1]
+# print(rlist)
+# This way also we can reverse the array
