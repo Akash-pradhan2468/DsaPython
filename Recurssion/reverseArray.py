@@ -2,9 +2,11 @@ def reverse_array(list,st,end):
     if st>=end:
         return
 
-    temp=list[st]
-    list[st]=list[end]
-    list[end]=temp
+    # temp=list[st]
+    # list[st]=list[end]
+    # list[end]=temp
+    list[st],list[end]=list[end],list[st]
+    # we can swap two number by this mathode as well
     reverse_array(list,st+1,end-1)
 
 list=[1,2,3,4,5,6,7,8]
